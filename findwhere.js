@@ -15,13 +15,9 @@ var ladders = [
 function findWhere(array, criteria) {
     var property = Object.keys(criteria);
 
-
     return array.find(function (item) {
-
         return item[property] === criteria[property]
-
     })
-
 }
 
 findWhere(ladders, { height: 25 });
